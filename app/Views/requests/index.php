@@ -28,6 +28,7 @@
 					<thead class="bg-dark text-white">
 						<th>ID</th>
 						<th>DATE</th>
+						<th>SUBJECT</th>
 						<th>BY</th>
 						<th>DESCRIPTION</th>
 						<th>ENCODED BY</th>
@@ -40,6 +41,7 @@
 							<tr>
 								<td class=""><a href="<?=base_url('/view-request/'.$request->id);?>"><?=$request->id;?></a></td>
 								<td><?=date_format(date_create($request->request_date),"m/d/Y");?></td>
+								<td><?=$request->subject;?></td>
 								<td><?=$request->requestor;?></td>
 								<td><?=$request->description;?></td>
 								<td><?=$request->addedby;?></td>
